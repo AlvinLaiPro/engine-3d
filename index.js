@@ -144,4 +144,6 @@ let cc = {
   animation,
 };
 Object.assign(cc, enums);
-export default cc;
+let _global = typeof window === undefined ? global : window;
+_global.cc = cc;
+// export default cc;
